@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+/*estilo de header*/
+.header{
+    background-color: #FAFD59;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+}
+/*estilo barra de navegacion*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-rincon-latino{
+    display: flex;
+    width: 100px;
+    padding-right: 20px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+   
+}
+.barra-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-botones{
+    font-size: 20px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content;
+}
+/*estilo de fotos en secuencia*/
+.slider{
+    width: 50%;
+    margin: auto;
+    height: 200px;
+    overflow: hidden;
+}
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 0%;
+
+    animation: slider 20s infinite alternate;
+    animation-timing-function: linear;
+
+}
+.slider li{
+    width: 50%;
+    list-style: none;
+}
+.slider li img{
+    width: 100%;
+}
+@keyframes slider{
+    0% {margin-left: 0;}
+   20% {margin-left: 0;}
+
+   0% {margin-left: 100%;}
+   20% {margin-left: 100;}
+
+   0% {margin-left: 200%;}
+   20% {margin-left: 200%;}
+   
+   0% {margin-left: 300%;}
+   20% {margin-left: 300;}
+
+
+}
+/*productos del main*/
+.pag-contenido{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productos-inicio{
+    padding: 10px;
+    border: 1px solid rgb(50, 50, 233);
+}
+/*estilo footer*/
+footer{
+    margin-top: 10cm ;
+    background-color: #FAFD59;
+    height: 80px;
+    width: 100%;
+   
+}
+.redes{
+  width: 40px;
+}
+/*estilo grid*/
+.grid-footer{
+    display: grid ;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:"ftsec1" "ftsec2" "ftsec3" ;
+}
+.videos-youtube{
+    display: grid ;
+    grid-template-columns: auto auto ;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas: "vd1"  "vd2" ;
+}
