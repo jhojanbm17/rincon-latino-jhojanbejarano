@@ -1,0 +1,26 @@
+{
+  "name": "rincon-latinov3-1---aplicando-ssas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./scss/style.scss ./css/index.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhojanbm17/rincon-latino-jhojanbejarano.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jhojanbm17/rincon-latino-jhojanbejarano/issues"
+  },
+  "homepage": "https://github.com/jhojanbm17/rincon-latino-jhojanbejarano#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
