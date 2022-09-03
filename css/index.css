@@ -59,9 +59,9 @@ body{
 }
 /*estilo footer*/
 footer{
+    display: inline-flex;
     margin-top: 5cm ;
     background-color: #FAFD59;
-    height: 80px;
     width: 100%;
    
 }
@@ -69,105 +69,9 @@ footer{
   width: 40px;
 }
 /*estilo grid*/
-.grid-footer{
-    display: grid ;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"ftsec1" "ftsec2" "ftsec3" ;
-}
 .videos-youtube{
     display: grid ;
     grid-template-columns: auto auto ;
     grid-template-rows: 1fr 1fr ;
     grid-template-areas: "vd1"  "vd2" ;
-}
-
-@media(max-width:768px){
-    *{
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: sans-serif;
-}
-/*estilo de header*/
-.header{
-    background-color: #FAFD59;
-    height: 80px;
-    width: 100%;
-    top: 0;
-    left: 0;
-
-}
-/*estilo barra de navegacion*/
-.navegacion{
-    display: flex;
-    justify-content: space-between;
-}
-.abrir-menu,
-.cerrar-menu {
-    display: none;
-}
-.logo-rincon-latino{
-    display: flex;
-    width: 100px;
-    padding-right: 20px;
-    margin-left: 5px;
-    margin-bottom: 15px;
-   
-}
-.barra-menu{
-    display: flex;
-    margin-right: 40px;
-    list-style: none;
-}
-.nav-botones{
-    font-size: 20px;
-    margin: 0 10px;
-    line-height: 80px;
-    width: max-content;
-}
-/*estilo de fotos en secuencia*/
-.carousel-item{
-    margin-left: 350px;
-}
-/*productos del main*/
-.pag-contenido{
-    margin-top: 1cm;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.productos-inicio{
-    padding: 10px;
-    border: 1px solid rgb(50, 50, 233);
-}
-/*estilo footer*/
-footer{
-    margin-top: 5cm ;
-    background-color: #FAFD59;
-    height: 80px;
-    width: 100%;
-    flex-wrap: wrap;
-}
-.redes{
-  width: 40px;
-}
-/*estilo grid*/
-.grid-footer{
-    display: grid ;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas:"ftsec1" "ftsec2" "ftsec3" ;
-}
-.videos-youtube{
-    display: grid ;
-    grid-template-columns: auto auto ;
-    grid-template-rows: 1fr 1fr ;
-    grid-template-areas: "vd1"  "vd2" ;
-}
-    
-
-    
-   
 }
