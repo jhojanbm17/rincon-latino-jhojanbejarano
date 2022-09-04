@@ -19,10 +19,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.abrir-menu,
-.cerrar-menu {
-    display: none;
-}
 .logo-rincon-latino{
     display: flex;
     width: 100px;
@@ -43,35 +39,42 @@ body{
     width: max-content;
 }
 /*estilo de fotos en secuencia*/
+.carousel{
+    margin-top: 1cm;
+    margin-bottom: 3cm;
+}
 .carousel-item{
-    margin-left: 350px;
+    padding-top: 1cm;
+    padding-bottom: 2cm;
+    align-items: center;
 }
 /*productos del main*/
-.pag-contenido{
-    margin-top: 1cm;
+.productos-main{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
-.productos-inicio{
-    padding: 10px;
-    border: 1px solid rgb(50, 50, 233);
+.card-title{
+   
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
 }
+.col{
+    display: inline-flex;
+    width: 300px;
+    height: 450px;
+    margin-bottom: 1cm;
+}
+
 /*estilo footer*/
 footer{
-    display: inline-flex;
-    margin-top: 5cm ;
-    background-color: #FAFD59;
-    width: 100%;
+    margin-top: 50%;
+    margin-bottom: 0;
+    padding-top: 10px;
    
 }
 .redes{
   width: 40px;
+  padding: 2px 2px;
 }
-/*estilo grid*/
-.videos-youtube{
-    display: grid ;
-    grid-template-columns: auto auto ;
-    grid-template-rows: 1fr 1fr ;
-    grid-template-areas: "vd1"  "vd2" ;
-}
+/*estilo videos*/
